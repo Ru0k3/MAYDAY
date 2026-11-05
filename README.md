@@ -8,6 +8,29 @@
 
 ---
 
+## Table of Contents
+
+- [1. Introduction](#1-introduction)
+- [2. Problem Statement](#2-problem-statement)
+- [3. Project Objectives](#3-project-objectives)
+- [4. Proposed Architecture](#4-proposed-architecture)
+- [5. Complete Project Workflow](#5-complete-project-workflow)
+- [6. Mathematical Calculations](#6-mathematical-calculations)
+- [7. Checkpointing Strategy](#7-checkpointing-strategy)
+- [8. Checkpoint Verification](#8-checkpoint-verification)
+- [9. Safe Cleanup Strategy](#9-safe-cleanup-strategy)
+- [10. Technologies](#10-technologies)
+- [11. Kubernetes Integration](#11-kubernetes-integration)
+- [12. Important Technical Considerations](#12-important-technical-considerations)
+- [13. Development Roadmap](#13-development-roadmap)
+- [14. Initial Development Environment](#14-initial-development-environment)
+- [15. Expected Outcome](#15-expected-outcome)
+- [16. Current Project Status](#16-current-project-status)
+- [17. Project Vision](#17-project-vision)
+- [Contributing](#contributing)
+
+---
+
 ## 1. Introduction
 
 Applications running inside Kubernetes Pods sometimes generate large amounts of temporary data. For example, an application may continuously write files into `/tmp` or other temporary storage locations.
@@ -552,3 +575,9 @@ The long-term vision is to create a reusable Kubernetes add-on that helps storag
 Instead of reacting only after a Pod is in danger, the system will attempt to predict storage pressure, coordinate checkpointing, and recover temporary storage safely.
 
 **Monitor early. Predict intelligently. Checkpoint safely. Clean carefully. Recover confidently.**
+
+---
+
+## Contributing
+
+Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for how to fork the repository, create a focused branch, and open a pull request. Work is currently focused on documentation, design, and the learning-phase components described in the [Development Roadmap](#13-development-roadmap).
